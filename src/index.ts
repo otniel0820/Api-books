@@ -1,4 +1,4 @@
-import express,{ Request, Response } from "express";
+import express from "express";
 
 import cors from "cors";
 import dotenv from "dotenv";
@@ -7,7 +7,7 @@ import routeBook from "./routes/book";
 dotenv.config();
 
 const app = express();
-app.use(cors({origin: true}));
+app.use(cors({origin: true, credentials: true}));
 app.use(express.json());
 app.use('/api', routeBook)
 const port = process.env.PORT || 8081;
