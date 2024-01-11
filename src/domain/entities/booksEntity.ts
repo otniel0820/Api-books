@@ -8,6 +8,7 @@ export const bookSchema = zod.object({
   author: zod.string(),
   description: zod.string(),
   price: zod.string(),
+  fileImg: zod.string()
 });
 
 export type BookDTO = zod.infer<typeof bookSchema> & BaseEntity
