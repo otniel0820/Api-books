@@ -9,7 +9,7 @@ const routeUpload: any = Router()
 export const upload = multer({ storage: multer.memoryStorage() });
 
 
-routeUpload.post('/upload',upload.single('fileImg'), uploadFiles)
+routeUpload.post('/upload',upload.single('file'), uploadFiles)
 
 
 
