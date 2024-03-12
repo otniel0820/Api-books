@@ -1,12 +1,12 @@
-import express from 'express';
-import { verifyTokenMW } from '../middleware/verifyTokenMW';
+// import express from 'express';
+// import { verifyTokenMW } from '../middleware/verifyTokenMW';
 
-const routeProtected = express.Router();
+// const routeProtected = express.Router();
 
-routeProtected.use(verifyTokenMW);
+// routeProtected.use(verifyTokenMW);
 
-routeProtected.get('/book/login', (req, res) => {
-  res.json({ message: 'Esta es una ruta protegida.' });
-});
+// routeProtected.get('/book/login', (req, res) => {
+//   res.json({ message: 'Esta es una ruta protegida.' });
+// });
 
-export default routeProtected;
+// export default routeProtected;
